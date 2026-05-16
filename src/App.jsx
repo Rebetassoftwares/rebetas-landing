@@ -26,7 +26,7 @@ const WHATSAPP_GROUP_LINK =
 
 function joinWhatsApp(position) {
   trackMeta("Lead", {
-    content_name: "Free Virtual Football WhatsApp Training",
+    content_name: "Free Online Income WhatsApp Training",
     button_position: position,
   });
 
@@ -46,7 +46,7 @@ function App() {
     <main className="page">
       <section className="top-alert">
         <Flame size={18} />
-        HAPPENING SOON — Free WhatsApp Training. Join now before access closes.
+        FREE WHATSAPP TRAINING
       </section>
 
       <section className="hero">
@@ -61,57 +61,60 @@ function App() {
             </div>
           </div>
 
-          <p className="eyebrow">Free Private WhatsApp Training</p>
+          <p className="eyebrow">FREE WHATSAPP TRAINING</p>
 
           <h1>
-            LEARN HOW TO MAKE ₦1 MILLION MONTHLY FROM VIRTUAL FOOTBALL BETTING.
+            LEARN HOW PEOPLE ARE MAKING DAILY INCOME ONLINE USING A SIMPLE
+            COPY-AND-PASTE SYSTEM FROM THEIR PHONE.
           </h1>
 
+          <p className="subheadline">Students. Workers. Business owners.</p>
+
           <p className="subheadline">
-            Stop losing money on sports betting and start using a faster
-            strategy smart people are using to grow small capital daily.
+            People are quietly using this system to grow small money daily
+            without needing any special skill.
+          </p>
+
+          <p className="subheadline">
+            No complicated setup.
+            <br />
+            No hard learning.
+            <br />
+            No stress.
           </p>
 
           <button className="main-cta" onClick={() => joinWhatsApp("hero")}>
-            CLICK HERE TO JOIN THE FREE TRAINING
+            CLICK BELOW TO JOIN THE FREE TRAINING NOW
             <ArrowRight size={22} />
           </button>
 
-          <p className="under-cta">100% Free Access — No Payment Required</p>
-
-          <div className="countdown-box">
-            <Clock size={19} />
-            <span>Group access may close once the training starts.</span>
-          </div>
+          <p className="under-cta">Limited Access Available.</p>
         </div>
       </section>
 
       <section className="story-section">
         <div className="container">
-          <p className="section-kicker">Read this carefully</p>
+          <p className="section-kicker">
+            This Is NOT The Normal Sports Betting You Know.
+          </p>
 
           <h2>
-            Sports betting is keeping many people broke because they keep
-            waiting, guessing and chasing losses.
+            No Waiting 90 Minutes. No Analyzing Teams. No Watching Matches All
+            Day.
           </h2>
 
           <div className="story-card">
-            <p>
-              Students, workers and business owners are now using virtual
-              football as a faster income strategy because results come quicker
-              and capital can be grown with timing, discipline and structured
-              signals.
-            </p>
+            <p>Just:</p>
 
             <p>
-              This is not about betting anyhow. This is about learning how to
-              approach virtual football like capital growth — almost like forex
-              trading, but faster to understand.
-            </p>
-
-            <p className="bold-line">
-              The full strategy, examples and signal access will be explained
-              inside the WhatsApp group.
+              • Fund your account
+              <br />
+              • Copy the signal
+              <br />
+              • Paste it
+              <br />
+              • Follow the system
+              <br />• Grow your capital gradually
             </p>
           </div>
 
@@ -119,7 +122,7 @@ function App() {
             className="main-cta mid"
             onClick={() => joinWhatsApp("story")}
           >
-            JOIN THE WHATSAPP TRAINING NOW
+            CLICK BELOW TO JOIN THE FREE TRAINING NOW
             <MessageCircle size={22} />
           </button>
         </div>
@@ -127,42 +130,29 @@ function App() {
 
       <section className="media-proof-section">
         <div className="container">
-          <p className="section-kicker">Proof preview</p>
-
-          <h2>
-            Real screenshots, results and testimonies will be shown inside.
-          </h2>
-
-          <p className="proof-intro">
-            I won’t post everything publicly here. Join the WhatsApp group to
-            see the full breakdown, examples and explanations.
+          <p className="section-kicker">
+            Some People Treat It Like Forex Trading.
           </p>
 
-          <div className="proof-grid">
-            <div className="proof-box video-box">
-              <span>Video Preview</span>
-              <h3>Private Training Clip</h3>
-              <p>Full video will be shared inside WhatsApp.</p>
-            </div>
+          <h2>
+            The more disciplined you are, the more your capital can grow over
+            time.
+          </h2>
 
-            <div className="proof-box">
-              <span>Screenshot Preview</span>
-              <h3>Capital Growth Breakdown</h3>
-              <p>Examples will be explained inside the group.</p>
-            </div>
+          <p className="proof-intro">You Don’t Need To Be A Betting Expert.</p>
 
-            <div className="proof-box">
-              <span>Testimonial Preview</span>
-              <h3>Member Results</h3>
-              <p>Real comments and screenshots will be shown inside.</p>
-            </div>
-          </div>
+          <p className="proof-intro">Even Complete Beginners Can Learn It.</p>
+
+          <p className="proof-intro">
+            Everything Will Be Broken Down Step-By-Step Inside The WhatsApp
+            Training.
+          </p>
 
           <button
             className="main-cta mid"
             onClick={() => joinWhatsApp("proof_preview")}
           >
-            JOIN TO SEE THE PROOF INSIDE
+            CLICK BELOW TO JOIN THE FREE TRAINING NOW
             <MessageCircle size={22} />
           </button>
         </div>
@@ -170,9 +160,11 @@ function App() {
 
       <section className="discover-section">
         <div className="container">
-          <p className="section-kicker">What you’ll learn</p>
+          <p className="section-kicker">
+            Inside The Free Training, You’ll Learn:
+          </p>
 
-          <h2>Here’s exactly what will be revealed inside:</h2>
+          <h2>Inside The Free Training, You’ll Learn:</h2>
 
           <div className="discover-list">
             <div className="discover-item">
@@ -180,11 +172,7 @@ function App() {
                 <Target />
               </div>
               <div>
-                <h3>How to stop losing money on sports betting</h3>
-                <p>
-                  Why normal sports betting keeps many people waiting, guessing
-                  and losing money emotionally.
-                </p>
+                <h3>How the system works</h3>
               </div>
             </div>
 
@@ -193,24 +181,7 @@ function App() {
                 <Zap />
               </div>
               <div>
-                <h3>How to grow small capital through virtual football</h3>
-                <p>
-                  The faster strategy for using timing, patience and repeated
-                  opportunities to build capital gradually.
-                </p>
-              </div>
-            </div>
-
-            <div className="discover-item">
-              <div className="icon-wrap">
-                <TrendingUp />
-              </div>
-              <div>
-                <h3>How people target ₦1 million monthly</h3>
-                <p>
-                  The capital growth approach, compounding mindset and signal
-                  structure will be explained inside the group.
-                </p>
+                <h3>How people grow small capital gradually</h3>
               </div>
             </div>
 
@@ -219,11 +190,16 @@ function App() {
                 <ShieldCheck />
               </div>
               <div>
-                <h3>How structured signals reduce random guessing</h3>
-                <p>
-                  Learn how signal-following helps you avoid blind entries,
-                  emotional staking and desperate chasing.
-                </p>
+                <h3>How to avoid emotional betting</h3>
+              </div>
+            </div>
+
+            <div className="discover-item">
+              <div className="icon-wrap">
+                <TrendingUp />
+              </div>
+              <div>
+                <h3>How to follow structured signals correctly</h3>
               </div>
             </div>
 
@@ -232,11 +208,16 @@ function App() {
                 <Users />
               </div>
               <div>
-                <h3>How to access the private signal structure</h3>
-                <p>
-                  The WhatsApp training will show you how the strategy works and
-                  how to follow it with discipline.
-                </p>
+                <h3>How to compound profit consistently</h3>
+              </div>
+            </div>
+
+            <div className="discover-item">
+              <div className="icon-wrap">
+                <Sparkles />
+              </div>
+              <div>
+                <h3>How people are building extra monthly income from it</h3>
               </div>
             </div>
           </div>
@@ -245,37 +226,26 @@ function App() {
             className="main-cta mid"
             onClick={() => joinWhatsApp("discover")}
           >
-            CLICK TO JOIN THE FREE TRAINING
+            CLICK BELOW TO JOIN THE FREE TRAINING NOW
             <ArrowRight size={22} />
           </button>
-
-          <p className="scarcity">
-            Limited access available. Group may be locked once training starts.
-          </p>
         </div>
       </section>
 
       <section className="proof-style-section">
         <div className="container two-col">
           <div>
-            <p className="section-kicker">Private access</p>
+            <p className="section-kicker">People Are Quietly Using This To:</p>
 
-            <h2>
-              This is not random gambling. This is capital growth strategy.
-            </h2>
-
-            <p>
-              You will learn timing, discipline, signal-following and how to
-              compound small capital responsibly through virtual football.
-            </p>
+            <h2>People Are Quietly Using This To:</h2>
 
             <div className="check-list">
               {[
-                "No payment before joining",
-                "No long boring lecture",
-                "No fake lifestyle promises",
-                "Simple WhatsApp breakdown",
-                "Private strategy explanation inside the group",
+                "Build Extra Monthly Income",
+                "Grow Small Capital Faster",
+                "Make Money Daily From Their Phone",
+                "Create Another Stream Of Income",
+                "Scale Gradually Over Time",
               ].map((item) => (
                 <div key={item}>
                   <CheckCircle2 />
@@ -287,25 +257,25 @@ function App() {
 
           <div className="result-card">
             <div className="result-top">
-              <span>Private Training Access</span>
+              <span>You Don’t Need To Be Rich To Start.</span>
               <b>FREE</b>
             </div>
 
             <div className="pick-box">
-              <span>What happens next?</span>
+              <span>You Don’t Need Any Special Skill.</span>
               <h3>Join The Group</h3>
             </div>
 
             <p>
-              The actual strategy, proof, examples and signal explanation will
-              only be shared inside the WhatsApp group.
+              You Just Need To Learn The System And Follow The Signals
+              Correctly.
             </p>
 
             <button
               className="main-cta full"
               onClick={() => joinWhatsApp("preview")}
             >
-              ENTER THE GROUP
+              CLICK BELOW TO JOIN THE FREE TRAINING NOW
               <MessageCircle size={22} />
             </button>
           </div>
@@ -314,29 +284,55 @@ function App() {
 
       <section className="final-section">
         <div className="container">
-          <p className="section-kicker">Final reminder</p>
+          <p className="section-kicker">REAL PROOF</p>
 
-          <h2>Join the free WhatsApp group now before the training starts.</h2>
+          <h2>
+            Real Screenshots.
+            <br />
+            Real Testimonials.
+            <br />
+            Real Results.
+          </h2>
 
-          <p>
-            The strategy breakdown, examples, proof and signal access will be
-            explained inside the group.
-          </p>
+          <div className="proof-gallery">
+            <div className="proof-image">
+              <img src="/proof/proof1.jpg" alt="Proof 1" />
+            </div>
+
+            <div className="proof-image">
+              <img src="/proof/proof2.jpg" alt="Proof 2" />
+            </div>
+
+            <div className="proof-image">
+              <img src="/proof/proof3.jpg" alt="Proof 3" />
+            </div>
+
+            <div className="proof-image">
+              <img src="/proof/proof4.jpg" alt="Proof 4" />
+            </div>
+          </div>
+
+          <div className="video-proof">
+            <video controls>
+              <source src="/proof/video1.mp4" type="video/mp4" />
+            </video>
+          </div>
 
           <button className="main-cta" onClick={() => joinWhatsApp("final")}>
-            CLICK HERE TO JOIN NOW
+            CLICK BELOW TO JOIN THE FREE TRAINING NOW
             <ArrowRight size={22} />
           </button>
 
-          <p className="under-cta">Free Access — WhatsApp Only</p>
+          <p className="under-cta">Limited Access Available.</p>
+
+          <div className="countdown-box">
+            <Clock size={19} />
+            <span>Group access may close once training starts.</span>
+          </div>
         </div>
       </section>
 
-      <footer>
-        Betting involves risk. This training is for education, discipline and
-        virtual football strategy awareness. Only stake what you can afford to
-        lose.
-      </footer>
+      <footer>Limited Access Available.</footer>
 
       <button className="sticky-cta" onClick={() => joinWhatsApp("sticky")}>
         <MessageCircle size={20} />
