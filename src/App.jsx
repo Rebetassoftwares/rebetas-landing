@@ -24,6 +24,42 @@ const WHATSAPP_GROUP_LINK =
   import.meta.env.VITE_WHATSAPP_GROUP_LINK ||
   "https://chat.whatsapp.com/YOUR_GROUP_LINK";
 
+const testimonialProofs = [
+  { type: "image", src: "/proof/testimonials/testimonial1.jpg" },
+  { type: "video", src: "/proof/testimonials/testimonial2.mp4" },
+  { type: "image", src: "/proof/testimonials/testimonial3.jpg" },
+  { type: "video", src: "/proof/testimonials/testimonial4.mp4" },
+  { type: "image", src: "/proof/testimonials/testimonial1.jpg" },
+  { type: "video", src: "/proof/testimonials/testimonial2.mp4" },
+  { type: "image", src: "/proof/testimonials/testimonial3.jpg" },
+  { type: "video", src: "/proof/testimonials/testimonial4.mp4" },
+];
+
+const resultProofs = [
+  { type: "image", src: "/proof/results/result1.jpg" },
+  { type: "image", src: "/proof/results/result2.jpg" },
+  { type: "image", src: "/proof/results/result3.jpg" },
+  { type: "image", src: "/proof/results/result4.jpg" },
+  { type: "image", src: "/proof/results/result1.jpg" },
+  { type: "image", src: "/proof/results/result2.jpg" },
+  { type: "image", src: "/proof/results/result3.jpg" },
+  { type: "image", src: "/proof/results/result4.jpg" },
+];
+
+function ProofCard({ item }) {
+  return (
+    <div className="portrait-proof-card">
+      {item.type === "video" ? (
+        <video controls playsInline preload="metadata">
+          <source src={item.src} type="video/mp4" />
+        </video>
+      ) : (
+        <img src={item.src} alt="" />
+      )}
+    </div>
+  );
+}
+
 function joinWhatsApp(position) {
   trackMeta("Lead", {
     content_name: "Free Online Income WhatsApp Training",
@@ -295,7 +331,7 @@ function App() {
           </h2>
 
           <div className="video-proof">
-            <video controls poster="/proof/videos/video-poster.jpg">
+            <video controls playsInline poster="/proof/videos/video-poster.jpg">
               <source src="/proof/videos/video1.mp4" type="video/mp4" />
             </video>
           </div>
@@ -303,22 +339,8 @@ function App() {
           <div className="proof-marquee-section">
             <div className="proof-marquee">
               <div className="proof-track">
-                {[
-                  "/proof/testimonials/testimonial1.jpg",
-                  "/proof/testimonials/testimonial2.jpg",
-                  "/proof/testimonials/testimonial3.jpg",
-                  "/proof/testimonials/testimonial4.jpg",
-                  "/proof/testimonials/testimonial1.jpg",
-                  "/proof/testimonials/testimonial2.jpg",
-                  "/proof/testimonials/testimonial3.jpg",
-                  "/proof/testimonials/testimonial4.jpg",
-                ].map((src, index) => (
-                  <div
-                    className="portrait-proof-card"
-                    key={`testimonial-${index}`}
-                  >
-                    <img src={src} alt={`Testimonial ${index + 1}`} />
-                  </div>
+                {testimonialProofs.map((item, index) => (
+                  <ProofCard item={item} key={`testimonial-${index}`} />
                 ))}
               </div>
             </div>
@@ -327,19 +349,8 @@ function App() {
           <div className="proof-marquee-section">
             <div className="proof-marquee">
               <div className="proof-track reverse-speed">
-                {[
-                  "/proof/results/result1.jpg",
-                  "/proof/results/result2.jpg",
-                  "/proof/results/result3.jpg",
-                  "/proof/results/result4.jpg",
-                  "/proof/results/result1.jpg",
-                  "/proof/results/result2.jpg",
-                  "/proof/results/result3.jpg",
-                  "/proof/results/result4.jpg",
-                ].map((src, index) => (
-                  <div className="portrait-proof-card" key={`result-${index}`}>
-                    <img src={src} alt={`Result ${index + 1}`} />
-                  </div>
+                {resultProofs.map((item, index) => (
+                  <ProofCard item={item} key={`result-${index}`} />
                 ))}
               </div>
             </div>
