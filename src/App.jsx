@@ -287,35 +287,62 @@ function App() {
           <p className="section-kicker">REAL PROOF</p>
 
           <h2>
-            Real Screenshots.
+            Watch The Video.
             <br />
-            Real Testimonials.
+            See The Testimonials.
             <br />
-            Real Results.
+            Check The Results.
           </h2>
 
-          <div className="proof-gallery">
-            <div className="proof-image">
-              <img src="/proof/proof1.jpg" alt="Proof 1" />
-            </div>
+          <div className="video-proof">
+            <video controls poster="/proof/videos/video-poster.jpg">
+              <source src="/proof/videos/video1.mp4" type="video/mp4" />
+            </video>
+          </div>
 
-            <div className="proof-image">
-              <img src="/proof/proof2.jpg" alt="Proof 2" />
-            </div>
-
-            <div className="proof-image">
-              <img src="/proof/proof3.jpg" alt="Proof 3" />
-            </div>
-
-            <div className="proof-image">
-              <img src="/proof/proof4.jpg" alt="Proof 4" />
+          <div className="proof-marquee-section">
+            <div className="proof-marquee">
+              <div className="proof-track">
+                {[
+                  "/proof/testimonials/testimonial1.jpg",
+                  "/proof/testimonials/testimonial2.jpg",
+                  "/proof/testimonials/testimonial3.jpg",
+                  "/proof/testimonials/testimonial4.jpg",
+                  "/proof/testimonials/testimonial1.jpg",
+                  "/proof/testimonials/testimonial2.jpg",
+                  "/proof/testimonials/testimonial3.jpg",
+                  "/proof/testimonials/testimonial4.jpg",
+                ].map((src, index) => (
+                  <div
+                    className="portrait-proof-card"
+                    key={`testimonial-${index}`}
+                  >
+                    <img src={src} alt={`Testimonial ${index + 1}`} />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 
-          <div className="video-proof">
-            <video controls>
-              <source src="/proof/video1.mp4" type="video/mp4" />
-            </video>
+          <div className="proof-marquee-section">
+            <div className="proof-marquee">
+              <div className="proof-track reverse-speed">
+                {[
+                  "/proof/results/result1.jpg",
+                  "/proof/results/result2.jpg",
+                  "/proof/results/result3.jpg",
+                  "/proof/results/result4.jpg",
+                  "/proof/results/result1.jpg",
+                  "/proof/results/result2.jpg",
+                  "/proof/results/result3.jpg",
+                  "/proof/results/result4.jpg",
+                ].map((src, index) => (
+                  <div className="portrait-proof-card" key={`result-${index}`}>
+                    <img src={src} alt={`Result ${index + 1}`} />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
 
           <button className="main-cta" onClick={() => joinWhatsApp("final")}>
