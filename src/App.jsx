@@ -94,7 +94,7 @@ function App() {
             </div>
             <div>
               <p>Hosted by</p>
-              <h3>VFL Winners Circle</h3>
+              <h3>TOP G</h3>
             </div>
           </div>
 
