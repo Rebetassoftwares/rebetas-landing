@@ -26,13 +26,14 @@ const WHATSAPP_GROUP_LINK =
 
 const testimonialProofs = [
   { type: "image", src: "/proof/testimonials/testimonial1.jpg" },
-  { type: "video", src: "/proof/testimonials/testimonial2.mp4" },
+  { type: "image", src: "/proof/testimonials/testimonial2.jpg" },
   { type: "image", src: "/proof/testimonials/testimonial3.jpg" },
-  { type: "video", src: "/proof/testimonials/testimonial4.mp4" },
-  { type: "image", src: "/proof/testimonials/testimonial1.jpg" },
-  { type: "video", src: "/proof/testimonials/testimonial2.mp4" },
-  { type: "image", src: "/proof/testimonials/testimonial3.jpg" },
-  { type: "video", src: "/proof/testimonials/testimonial4.mp4" },
+  { type: "image", src: "/proof/testimonials/testimonial4.jpg" },
+  { type: "image", src: "/proof/testimonials/testimonial5.jpg" },
+  { type: "image", src: "/proof/testimonials/testimonial6.jpg" },
+  { type: "image", src: "/proof/testimonials/testimonial7.jpg" },
+  { type: "image", src: "/proof/testimonials/testimonial8.jpg" },
+  { type: "image", src: "/proof/testimonials/testimonial9.jpg" },
 ];
 
 const resultProofs = [
@@ -40,10 +41,10 @@ const resultProofs = [
   { type: "image", src: "/proof/results/result2.jpg" },
   { type: "image", src: "/proof/results/result3.jpg" },
   { type: "image", src: "/proof/results/result4.jpg" },
+  { type: "image", src: "/proof/results/result5.jpg" },
+  { type: "image", src: "/proof/results/result6.jpg" },
+  { type: "image", src: "/proof/results/result7.jpg" },
   { type: "image", src: "/proof/results/result1.jpg" },
-  { type: "image", src: "/proof/results/result2.jpg" },
-  { type: "image", src: "/proof/results/result3.jpg" },
-  { type: "image", src: "/proof/results/result4.jpg" },
 ];
 
 function ProofCard({ item }) {
