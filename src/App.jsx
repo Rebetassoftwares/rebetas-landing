@@ -63,13 +63,18 @@ function ProofCard({ item }) {
 
 function joinWhatsApp(position) {
   trackMeta("Lead", {
-    content_name: "Free Online Income WhatsApp Training",
+    content_name: "Virtual Football Strategy Training",
     button_position: position,
   });
 
   setTimeout(() => {
     window.location.href = WHATSAPP_GROUP_LINK;
   }, 250);
+}
+
+function scrollToTraining() {
+  const section = document.getElementById("training-video");
+  section?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function App() {
@@ -83,7 +88,7 @@ function App() {
     <main className="page">
       <section className="top-alert">
         <Flame size={18} />
-        FREE WHATSAPP TRAINING
+        FREE VIRTUAL FOOTBALL STRATEGY TRAINING
       </section>
 
       <section className="hero">
@@ -98,7 +103,7 @@ function App() {
             </div>
           </div>
 
-          <p className="eyebrow">FREE WHATSAPP TRAINING</p>
+          <p className="eyebrow">FREE VIRTUAL FOOTBALL STRATEGY TRAINING</p>
 
           <h1>
             LEARN HOW PEOPLE ARE MAKING DAILY INCOME ONLINE USING A SIMPLE
@@ -120,12 +125,14 @@ function App() {
             No stress.
           </p>
 
-          <button className="main-cta" onClick={() => joinWhatsApp("hero")}>
-            CLICK BELOW TO JOIN THE FREE TRAINING NOW
+          <button className="main-cta" onClick={scrollToTraining}>
+            WATCH THE FREE TRAINING FIRST
             <ArrowRight size={22} />
           </button>
 
-          <p className="under-cta">Limited Access Available.</p>
+          <p className="under-cta">
+            Watch the training before joining the coaching group.
+          </p>
         </div>
       </section>
 
@@ -155,11 +162,8 @@ function App() {
             </p>
           </div>
 
-          <button
-            className="main-cta mid"
-            onClick={() => joinWhatsApp("story")}
-          >
-            CLICK BELOW TO JOIN THE FREE TRAINING NOW
+          <button className="main-cta mid" onClick={scrollToTraining}>
+            WATCH THE FREE TRAINING FIRST
             <MessageCircle size={22} />
           </button>
         </div>
@@ -181,15 +185,12 @@ function App() {
           <p className="proof-intro">Even Complete Beginners Can Learn It.</p>
 
           <p className="proof-intro">
-            Everything Will Be Broken Down Step-By-Step Inside The WhatsApp
-            Training.
+            Watch the training video below first. Everything is explained before
+            you join the coaching group.
           </p>
 
-          <button
-            className="main-cta mid"
-            onClick={() => joinWhatsApp("proof_preview")}
-          >
-            CLICK BELOW TO JOIN THE FREE TRAINING NOW
+          <button className="main-cta mid" onClick={scrollToTraining}>
+            WATCH THE FREE TRAINING FIRST
             <MessageCircle size={22} />
           </button>
         </div>
@@ -259,11 +260,8 @@ function App() {
             </div>
           </div>
 
-          <button
-            className="main-cta mid"
-            onClick={() => joinWhatsApp("discover")}
-          >
-            CLICK BELOW TO JOIN THE FREE TRAINING NOW
+          <button className="main-cta mid" onClick={scrollToTraining}>
+            WATCH THE FREE TRAINING FIRST
             <ArrowRight size={22} />
           </button>
         </div>
@@ -300,41 +298,59 @@ function App() {
 
             <div className="pick-box">
               <span>You Don’t Need Any Special Skill.</span>
-              <h3>Join The Group</h3>
+              <h3>Watch First</h3>
             </div>
 
             <p>
-              You Just Need To Learn The System And Follow The Signals
-              Correctly.
+              You just need to learn the system and understand how to follow the
+              signals correctly.
             </p>
 
-            <button
-              className="main-cta full"
-              onClick={() => joinWhatsApp("preview")}
-            >
-              CLICK BELOW TO JOIN THE FREE TRAINING NOW
+            <button className="main-cta full" onClick={scrollToTraining}>
+              WATCH THE FREE TRAINING FIRST
               <MessageCircle size={22} />
             </button>
           </div>
         </div>
       </section>
 
-      <section className="final-section">
+      <section className="final-section" id="training-video">
         <div className="container">
-          <p className="section-kicker">REAL PROOF</p>
+          <p className="section-kicker">WATCH THIS FIRST</p>
 
           <h2>
-            Watch The Video.
+            Watch The Training.
             <br />
-            See The Testimonials.
+            Understand The System.
             <br />
-            Check The Results.
+            Then Join The Coaching Group.
           </h2>
 
           <div className="video-proof">
-            <video controls playsInline poster="/proof/videos/video-poster.jpg">
-              <source src="/proof/videos/video1.mp4" type="video/mp4" />
-            </video>
+            <iframe
+              src="https://player.mediadelivery.net/embed/680559/f5f40706-452b-47c1-a9e2-4a37e6b03719?autoplay=true&loop=false&muted=true&preload=true&responsive=true"
+              loading="lazy"
+              title="Virtual Football Strategy Training"
+              allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"
+              allowFullScreen
+            />
+          </div>
+
+          <div className="join-gate-box">
+            <h3>Before Joining The Coaching Group</h3>
+
+            <p>
+              Please watch the training video first. This group is not for free
+              SportyBet codes, sure odds, or random prediction requests.
+            </p>
+
+            <button
+              className="main-cta full"
+              onClick={() => joinWhatsApp("after_training")}
+            >
+              JOIN THE LIVE COACHING GROUP
+              <ArrowRight size={22} />
+            </button>
           </div>
 
           <div className="proof-marquee-section">
@@ -357,11 +373,6 @@ function App() {
             </div>
           </div>
 
-          <button className="main-cta" onClick={() => joinWhatsApp("final")}>
-            CLICK BELOW TO JOIN THE FREE TRAINING NOW
-            <ArrowRight size={22} />
-          </button>
-
           <p className="under-cta">Limited Access Available.</p>
 
           <div className="countdown-box">
@@ -373,9 +384,9 @@ function App() {
 
       <footer>Limited Access Available.</footer>
 
-      <button className="sticky-cta" onClick={() => joinWhatsApp("sticky")}>
+      <button className="sticky-cta" onClick={scrollToTraining}>
         <MessageCircle size={20} />
-        REGISTER NOW
+        WATCH TRAINING FIRST
       </button>
     </main>
   );
