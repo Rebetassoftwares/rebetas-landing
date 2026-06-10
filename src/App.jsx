@@ -315,7 +315,7 @@ function App() {
       </section>
 
       <section className="final-section" id="training-video">
-        <div className="container">
+        <div className="training-container">
           <p className="section-kicker">WATCH THIS FIRST</p>
 
           <h2>
@@ -328,7 +328,7 @@ function App() {
 
           <div className="video-proof">
             <iframe
-              src="https://player.mediadelivery.net/embed/680559/f5f40706-452b-47c1-a9e2-4a37e6b03719?autoplay=true&loop=false&muted=true&preload=true&responsive=true"
+              src="https://player.mediadelivery.net/embed/680559/f5f40706-452b-47c1-a9e2-4a37e6b03719?autoplay=false&loop=false&muted=false&preload=true&responsive=true"
               loading="lazy"
               title="Virtual Football Strategy Training"
               allow="accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;"
